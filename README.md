@@ -22,6 +22,7 @@ https://www.youtube.com/watch?v=
 * **Contact Tracing - Web & Android** Status: Completed
 * **Fencing & Event Based Alert** Status: In-Progress
 * **Booking, Queue & GPS Based Solution for Raw Material Business(Purchase/Selling)** Status: Yet to start
+* **AI Based User Interface(Text & Voice Bot)** Status: Yet to start
 
 # Technologies Used
 
