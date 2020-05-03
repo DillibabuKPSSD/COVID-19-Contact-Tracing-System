@@ -10,6 +10,7 @@ We have developed a  comprehensive contact tracing  system that will help author
 - Copy the PHP files in thw web directory
 - Create db_covid19 database & configure in config.php
 - Create Google Map API key & configure in config.php
+- Android Studio(Import & compile the the client tracking source code)
 - Android Client App(Install & configure device name)
 
 # Demo Showcase Video
