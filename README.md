@@ -5,6 +5,12 @@ We have developed a  comprehensive contact tracing  system that will help author
 # ❗️**DISCLAIMER**
 **PROJECT STATUS: We have developed an MVP version for Covers vs COVID Hackathon, This needs to proceed with further development to productize this application.**
 
+# Installation (In local machine)
+- WAMP / LAMP stack
+- Copy the PHP files in thw web directory
+- Create db_covid19 database & configure in config.php
+- Android Client App in android device with proper name
+
 # Demo Showcase Video
 1) Web App preparation(UI, Google Map & DB)
 2) In DB, Created 3 users(Dillibabu-**I**, Suresh-**N** & Sankar-**N**)  **Note:** **I** means Infected & **N** means Normal
