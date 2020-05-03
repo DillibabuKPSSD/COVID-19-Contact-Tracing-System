@@ -9,7 +9,8 @@ We have developed a  comprehensive contact tracing  system that will help author
 - WAMP / LAMP stack
 - Copy the PHP files in thw web directory
 - Create db_covid19 database & configure in config.php
-- Android Client App in android device with proper name
+- Create Google Map API key & configure in config.php
+- Android Client App(Install & configure device name)
 
 # Demo Showcase Video
 1) Web App preparation(UI, Google Map & DB)
