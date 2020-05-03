@@ -1,6 +1,11 @@
 # COVID-19-Contact-Tracing-System
+The most difficult part in today’s  situation is to trace people who  might have been in contact with a  covid 19 positive patient at any  given point in time.
+
 We have developed a  comprehensive contact tracing  system that will help authorities to easily track the affected  individual’s journey and those  people who were near him / her  during the same time.
 
+This is achieved through a GPS based  application that needs to be installed by  everyone on their smartphones. Since most  of them by default have their GPS enabled,  this will help us to trace contacts easily. This  application will run in the background even  if the user kills the app.
+
+Once we have everyone install this  application, the authorities will be able to  access the following information via their  dashboard.
 
 # ❗️**DISCLAIMER**
 **PROJECT STATUS: We have developed an MVP version for Covers vs COVID Hackathon, This needs to proceed with further development to productize this application.**
