@@ -3,13 +3,19 @@ We have developed a  comprehensive contact tracing  system that will help author
 
 
 # ❗️❗️**DISCLAIMER**
-**PROJECT STATUS: We still in MVP, Need to proceed further development to productize this application.**
+**PROJECT STATUS: We still in MVP, Need to proceed further development to productize this prototype.**
 
 # Demo Showcase Video
 
 https://www.youtube.com/watch?v=
 
 [![IMAGE ALT TEXT](http://img.youtube.com/vi/ouVc6szvl00/0ssa.jpg)](http://www.youtube.com/watch?v= "COVID-19 Contact Tracing System")
+
+# Features
+* **Contact Tracing - Web** Status: Completed
+* **Contact Tracing - Android** Status: Completed
+* **Fencing & Event Based Alert** Status: In-Progress
+* **Booking, Queue & GPS Based Solution for Raw Material Business(Purchase/Selling)** Status: Yet to start
 
 # Technologies Used
 
@@ -37,5 +43,3 @@ The technologies selection is done considering the readily available components 
 
 # Thanks
 Thanks for the teamates in terms of idea, developement & support. Mr. Suresh & Mr. Sankar.
-
-TechieBros.
