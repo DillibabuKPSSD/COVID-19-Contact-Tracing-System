@@ -10,8 +10,8 @@ We have developed a  comprehensive contact tracing  system that will help author
 2) In DB, Created 3 users(Dillibabu-**I**, Suresh-**N** & Sankar-**N**)  **Note:** **I** means Infected & **N** means Normal
 3) Android App preparation(Mobile Client App)
 4) Install the android client app in all the 3 users & input respective user names & infection status(I & N)
-5) Start traveling, meet with the infected person in certain place & time
-6) Lets check in the web application with Infected User, Contact Distnce & Datetime inputs. It will be identified & traced that infected users contacts in map & in the table.
+5) Start traveling, meet with the infected person in a certain place & time
+6) Let's check in the web application with Infected User, Contact Distance & Datetime inputs. It will be identified & traced that infected user's contacts in the map & in the table.
 
 
 https://www.youtube.com/watch?v=
@@ -49,4 +49,4 @@ The technologies selection is done during the time of development. The list of t
 - Postman - REST Client
 
 # Thanks
-Thanks for the teamates in terms of idea, developement and support Mr. Suresh & Mr. Sankar.
+Thanks for the teammates in terms of idea, development, and support Mr. Suresh & Mr. Sankar.
