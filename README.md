@@ -3,7 +3,7 @@ We have developed a  comprehensive contact tracing  system that will help author
 
 
 # ❗️**DISCLAIMER**
-**PROJECT STATUS: We have developed an MVP version for Covers vs COVID, This needs to proceed with further development to productize this application.**
+**PROJECT STATUS: We have developed an MVP version for Covers vs COVID Hackathon, This needs to proceed with further development to productize this application.**
 
 # Demo Showcase Video
 1) Web App preparation(UI, Google Map & DB)
@@ -26,7 +26,7 @@ https://www.youtube.com/watch?v=
 
 # Technologies Used
 
-The technologies selection is done considering the readily available components at the time of development. The list of technologies used were given below.
+The technologies selection is done during the time of development. The list of technologies used were given below.
 
 **GPS Tracking Server**
 - Google Map
