@@ -21,13 +21,13 @@ https://www.youtube.com/watch?v=
 
 The technologies selection is done considering the readily available components at the time of development. The list of technologies used were given below.
 
-# GPS Tracking Server
+**GPS Tracking Server**
 - Google Map
 - GPS Application
 - Viewer (Web)
 - Tracking (Android Client)
 
-# Programming Languages
+**Programming Languages**
 - Java
 - Javascript
 - MySQL
@@ -35,7 +35,7 @@ The technologies selection is done considering the readily available components 
 - XML
 - CSS
 
-# Tools(SDK, IDE & Utilities)
+**Tools(SDK, IDE & Utilities)**
 - Android Studio
 - Sublime
 - Workbench
