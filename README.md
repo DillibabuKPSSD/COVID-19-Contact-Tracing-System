@@ -8,7 +8,7 @@ This is achieved through a GPS based  application that needs to be installed by 
 Once we have everyone install this  application, the authorities will be able to  access the following information via their  dashboard.
 
 # ❗️**DISCLAIMER**
-**PROJECT STATUS: We have developed an MVP version for Covers vs COVID Hackathon, This needs to proceed with further development to productize this application.**
+**PROJECT STATUS: We have developed an MVP version for the Hackathon, This needs to proceed with further development to productize this application.**
 
 # Installation (In local machine)
 - WAMP / LAMP stack
