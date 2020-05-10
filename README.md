@@ -62,4 +62,4 @@ The technologies selection is done during the time of development. The list of t
 - Postman - REST Client
 
 # Thanks
-Thanks for my teammates in terms of idea, development, and support Mr. Suresh & Mr. Sankar.
+Thanks for my teammates in terms of idea, development, and support Mr. Sankar & Mr. Suresh.
