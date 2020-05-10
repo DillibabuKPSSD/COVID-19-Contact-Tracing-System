@@ -24,7 +24,7 @@ Once we have everyone install this  application, the authorities will be able to
 3) Android App(Mobile Client)
 4) Install the android client app in all the 3 user smart phone & input respective user names & infection status(I & N)
 5) Start traveling, meet with the infected person in a certain place & time
-6) Let's check in the web application with Infected User, Contact Distance & Datetime inputs. It will be identified & traced that infected user's contacts in the map & in the table.
+6) Let's check in the web application with Infected User, Contact Distance & Datetime inputs. It will be identified & traced that infected user's contacts in the map & table.
 
 
 https://www.youtube.com/watch?v=
