@@ -34,6 +34,7 @@ https://www.youtube.com/watch?v=
 # Features
 * **Contact Tracing - Web & Android** Status: Completed
 * **Fencing & Event Based Alert** Status: In-Progress
+* **Authentication & Authorisation** Status: Yet to start
 * **AI Based User Interface(dialogflow used to create Text & Voice Bot)** Status: Yet to start
 * **Booking, Queue & GPS Based Solution for Essentials Business(Purchase/Selling)** Status: Yet to start
 
