@@ -19,10 +19,10 @@ Once we have everyone install this  application, the authorities will be able to
 - Android Client App(Install & configure device name)
 
 # Demo Showcase Video
-1) Web App preparation(UI, Google Map & DB)
+1) Web App(UI, Google Map & DB)
 2) In DB, Created 3 users(Dillibabu-**I**, Suresh-**N** & Sankar-**N**)  **Note:** **I** means Infected & **N** means Normal
-3) Android App preparation(Mobile Client App)
-4) Install the android client app in all the 3 users & input respective user names & infection status(I & N)
+3) Android App(Mobile Client)
+4) Install the android client app in all the 3 user smart phone & input respective user names & infection status(I & N)
 5) Start traveling, meet with the infected person in a certain place & time
 6) Let's check in the web application with Infected User, Contact Distance & Datetime inputs. It will be identified & traced that infected user's contacts in the map & in the table.
 
@@ -35,13 +35,13 @@ https://www.youtube.com/watch?v=
 * **Contact Tracing - Web & Android** Status: Completed
 * **Fencing & Event Based Alert** Status: In-Progress
 * **AI Based User Interface(dialogflow used to create Text & Voice Bot)** Status: Yet to start
-* **Booking, Queue & GPS Based Solution for Raw Material Business(Purchase/Selling)** Status: Yet to start
+* **Booking, Queue & GPS Based Solution for Essentials Business(Purchase/Selling)** Status: Yet to start
 
 # Technologies Used
 
 The technologies selection is done during the time of development. The list of technologies used were given below.
 
-**GPS Tracking Server**
+**GPS Tracking Server/Service**
 - Google Map
 - GPS Application
 - Viewer (Web)
