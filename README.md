@@ -29,7 +29,7 @@ Once we have everyone install this  application, the authorities will be able to
 
 https://www.youtube.com/watch?v=85vc79mtIXE
 
-[![IMAGE ALT TEXT](http://img.youtube.com/vi/ouVc6szvl00/0ssa.jpg)](http://www.youtube.com/watch?v=85vc79mtIXE "COVID-19 Contact Tracing System")
+[![IMAGE ALT TEXT](http://i3.ytimg.com/vi/85vc79mtIXE/hqdefault.jpg)](http://www.youtube.com/watch?v=85vc79mtIXE "COVID-19 Contact Tracing System")
 
 # Features
 * **Contact Tracing - Web & Android** Status: Completed
