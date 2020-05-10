@@ -22,5 +22,5 @@
 	}
 
 	//GMap config
-	$key = "AIzaSyD9Vz8onySZoQbUyMQ_AdkfnrC2PZFQtb4";
+	$key = "AIzaSyCTx3phx-TsGMBYfdm4K44F68XKXNJDeqk";
 ?>
