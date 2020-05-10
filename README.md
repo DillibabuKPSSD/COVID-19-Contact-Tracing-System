@@ -12,10 +12,10 @@ Once we have everyone install this  application, the authorities will be able to
 
 # Installation (In local machine)
 - WAMP / LAMP stack
-- Copy the PHP files in thw web directory
+- Copy the PHP files in the web directory
 - Create db_covid19 database & configure in config.php
 - Create Google Map API key & configure in config.php
-- Android Studio(Import & compile the the client tracking source code)
+- Android Studio(Import & compile the client tracking source code)
 - Android Client App(Install & configure device name)
 
 # Demo Showcase Video
