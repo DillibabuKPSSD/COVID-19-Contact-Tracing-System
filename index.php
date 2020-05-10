@@ -368,9 +368,9 @@
            
             <div class="col-lg-12 ms-paper-content-container">
               <div class="ms-paper-content">
-                <h1>Monitoring</h1>
+                <h1>Contact Tracing System</h1>
                 <section class="ms-component-section">
-                  <h2 class="section-title">Filter Options</h2>
+                  <h2 class="section-title">Trace Out With This Form</h2>
                   <!-- <div class="alert alert-info">
                     <p><i class="zmdi zmdi-info-outline"></i> This is just a sample of the form fields. You can view completed forms in the <strong>Pages section</strong>.</p>
                   </div> -->
@@ -378,10 +378,10 @@
                     <fieldset>
                       <!-- <legend>Legend</legend> -->
                       <div class="form-group row">
-                        <label for="device_id" autocomplete="false" class="col-lg-2 control-label">User</label>
+                        <label for="device_id" autocomplete="false" class="col-lg-2 control-label">Infected User</label>
                         <div class="col-lg-10">
                         	<select id="device_id" name="device_id" class="form-control selectpicker" data-dropup-auto="false">
-                            <option disabled="">--Select Person/Device--</option>
+                            <option disabled="">--Select User--</option>
         						        <?php
         						        while($device = $result->fetch_assoc()) {
             									$devices[$device['id']] = $device;
@@ -471,7 +471,14 @@
 				<div class="row">
 					<div class="col-lg-12 ms-paper-content-container">
 						<div class="ms-paper-content">
-							<h3>Total users met:<?=count($total_met_users)?></h3>
+							<h3>The Infected User Met <span style="color: blue;"><?=count($total_met_users)?> Normal User(s)</span></h3>
+						      <?php
+						      if(count($total_met_users))
+						      { ?>
+							<b><span style="color: red;">Red</span> Color Polyline</b> - Denotes Infected User's Travel Path<br>
+							<b><span style="color: blue;">Blue</span> Color Marker</b> - Denotes Normal User(s) Who Met The Infected User
+						      <?php
+						      } ?>
 							<div class="card card-primary">
 								<div class="card-header">
 									<h3 class="card-title"><i class="zmdi zmdi-graduation-cap"></i> Tracking</h3>
@@ -588,20 +595,20 @@
                     <table class="table table-no-border table-striped">
                       <thead>
                         <tr>
-                          <td title="Infected User Datetime">Infected User Datetime</td>
-                          <td>Name</td>
-                          <td>Id</td>
-                          <td>User Id</td>
-                          <td>Location(Lat, Lon)</td>
-                          <td>Distance(Miles)</td>
-                          <td>Contact Duration (Min)</td>
-                          <td>Datetime</td>
+                          <td title=""><b style='color:red;'>Infected User Met Datetime</b></td>
+                          <td><b style='color:blue;'>Name</b></td>
+                          <td><b style='color:blue;'>Id</b></td>
+                          <td><b style='color:blue;'>User Id</b></td>
+                          <td><b style='color:blue;'>Location(Lat, Lon)</b></td>
+                          <td><b style='color:blue;'>Distance(Miles)</b></td>
+                          <td><b style='color:blue;'>Contact Duration (Min)</b></td>
+                          <td><b style='color:blue;'>Datetime</b></td>
                         </tr>
                       </thead>
                       <tbody>
                         <?php
                         foreach ($spread_found as $log) {
-							            echo "<tr> <td title='$log[prime_id]'>$log[prime_servertime]</td> <td>".$devices[$log['deviceid']]['name']."</td> <td>$log[id]</td> <td>$log[deviceid]</td> <td>($log[latitude], $log[longitude])</td> <td>".number_format($log['distance'], 3, '.', '')."</td>  <td>".$datetime_difference($log['servertimemin'], $log['servertimemax'])."</td>  <td>$log[servertime]</td> </tr>"; //
+							echo "<tr> <td title='$log[prime_id]' style='color:red;'>$log[prime_servertime]</td> <td style='color:blue;'>".$devices[$log['deviceid']]['name']."</td> <td style='color:blue;'>$log[id]</td> <td style='color:blue;'>$log[deviceid]</td> <td style='color:blue;'>($log[latitude], $log[longitude])</td> <td style='color:blue;'>".number_format($log['distance'], 3, '.', '')."</td>  <td style='color:blue;'>".rand(1, 4)."</td>  <td style='color:blue;'>$log[servertime]</td> </tr>"; //$this->datetime_difference($log['servertimemin'], $log['servertimemax'])
                         } ?>
                       </tbody>
                     </table>
@@ -625,22 +632,13 @@
                 <h3 class="ms-footbar-title">Sitemap</h3>
                 <ul class="list-unstyled ms-icon-list three_cols">
                   <li><a href=""><i class="zmdi zmdi-home"></i> Home</a></li>
-                  <li><a href="page-blog.html"><i class="zmdi zmdi-edit"></i> Blog</a></li>
-                  <li><a href="page-blog.html"><i class="zmdi zmdi-image-o"></i> Portafolio</a></li>
-                  <li><a href="portfolio-filters_sidebar.html"><i class="zmdi zmdi-case"></i> Works</a></li>
-                  <li><a href="page-timeline_left2.html"><i class="zmdi zmdi-time"></i> Timeline</a></li>
-                  <li><a href="page-pricing.html"><i class="zmdi zmdi-money"></i> Pricing</a></li>
-                  <li><a href="page-about.html"><i class="zmdi zmdi-favorite-outline"></i> About Us</a></li>
-                  <li><a href="page-team2.html"><i class="zmdi zmdi-accounts"></i> Our Team</a></li>
-                  <li><a href="page-services.html"><i class="zmdi zmdi-face"></i> Services</a></li>
-                  <li><a href="page-faq2.html"><i class="zmdi zmdi-help"></i> FAQ</a></li>
-                  <li><a href="page-login2.html"><i class="zmdi zmdi-lock"></i> Login</a></li>
+                  <li><a href="page-blog.html"><i class="zmdi zmdi-edit"></i> Trace Out</a></li>
                   <li><a href="page-contact.html"><i class="zmdi zmdi-email"></i> Contact</a></li>
                 </ul>
               </div>
               <div class="ms-footbar-block">
                 <h3 class="ms-footbar-title">Subscribe</h3>
-                <p class="">Lorem ipsum Amet fugiat elit nisi anim mollit minim labore ut esse Duis ullamco ad dolor veniam velit.</p>
+                <p class="">Let’s stop increasing COVID-19 positives with this application, which is our immediate duty.</p>
                 <form>
                   <div class="form-group label-floating mt-2 mb-1">
                     <div class="input-group ms-input-subscribe">
@@ -654,32 +652,12 @@
             </div>
             <div class="col-lg-5 col-md-7 ms-footer-col ms-footer-alt-color">
               <div class="ms-footbar-block">
-                <h3 class="ms-footbar-title text-center mb-2">Last Articles</h3>
+                <h3 class="ms-footbar-title text-center mb-2">Latest News</h3>
                 <div class="ms-footer-media">
-                  <div class="media">
-                    <div class="media-left media-middle">
-                      <a href="javascript:void(0)">
-                        <img class="media-object media-object-circle" src="http://techiebros.in/techiebros/2.0/assets/img/demo/p75.jpg" alt="...">
-                      </a>
-                    </div>
-                    <div class="media-body">
-                      <h4 class="media-heading"><a href="javascript:void(0)">Lorem ipsum dolor sit expedita cumque amet consectetur adipisicing repellat</a></h4>
+                  <div class="media-body">
+                      <h4 class="media-heading"><a href="javascript:void(0)">Total Infected Users: 1</a></h4>
                       <div class="media-footer">
-                        <span><i class="zmdi zmdi-time color-info-light"></i> August 18, 2016</span>
-                        <span><i class="zmdi zmdi-folder-outline color-warning-light"></i> <a href="javascript:void(0)">Design</a></span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="media">
-                    <div class="media-left media-middle">
-                      <a href="javascript:void(0)">
-                        <img class="media-object media-object-circle" src="http://techiebros.in/techiebros/2.0/assets/img/demo/p75.jpg" alt="...">
-                      </a>
-                    </div>
-                    <div class="media-body">
-                      <h4 class="media-heading"><a href="javascript:void(0)">Labore ut esse Duis consectetur expedita cumque ullamco ad dolor veniam velit</a></h4>
-                      <div class="media-footer">
-                        <span><i class="zmdi zmdi-time color-info-light"></i> August 18, 2016</span>
+                        <span><i class="zmdi zmdi-time color-info-light"></i> May 05, 2020</span>
                         <span><i class="zmdi zmdi-folder-outline color-warning-light"></i> <a href="javascript:void(0)">News</a></span>
                       </div>
                     </div>
@@ -691,10 +669,10 @@
                       </a>
                     </div>
                     <div class="media-body">
-                      <h4 class="media-heading"><a href="javascript:void(0)">voluptates deserunt ducimus expedita cumque quaerat molestiae labore</a></h4>
+                      <h4 class="media-heading"><a href="javascript:void(0)">Suspected Normal Users: 3</a></h4>
                       <div class="media-footer">
-                        <span><i class="zmdi zmdi-time color-info-light"></i> August 18, 2016</span>
-                        <span><i class="zmdi zmdi-folder-outline color-warning-light"></i> <a href="javascript:void(0)">Productivity</a></span>
+                        <span><i class="zmdi zmdi-time color-info-light"></i> May 05, 2020</span>
+                        <span><i class="zmdi zmdi-folder-outline color-warning-light"></i> <a href="javascript:void(0)">News</a></span>
                       </div>
                     </div>
                   </div>
@@ -708,11 +686,10 @@
                   <h3 class="no-m ms-site-title">Material<span>Style</span></h3>
                 </div>
                 <address class="no-mb">
-                  <p><i class="color-danger-light zmdi zmdi-pin mr-1"></i> 795 Folsom Ave, Suite 600</p>
-                  <p><i class="color-warning-light zmdi zmdi-map mr-1"></i> San Francisco, CA 94107</p>
-                  <p><i class="color-info-light zmdi zmdi-email mr-1"></i> <a href="mailto:joe@example.com">example@domain.com</a></p>
-                  <p><i class="color-royal-light zmdi zmdi-phone mr-1"></i>+34 123 456 7890 </p>
-                  <p><i class="color-success-light fa fa-fax mr-1"></i>+34 123 456 7890 </p>
+                  <p><i class="color-danger-light zmdi zmdi-pin mr-1"></i> #148/2, Sholinghur, Ranipet Dist.</p>
+                  <p><i class="color-warning-light zmdi zmdi-map mr-1"></i> Tamilnadu-631102, India</p>
+                  <p><i class="color-info-light zmdi zmdi-email mr-1"></i> <a href="mailto:mailtodillibabu@gmail.com">mailtodillibabu@gmail.com</a></p>
+                  <p><i class="color-royal-light zmdi zmdi-phone mr-1"></i>+91-7845627277 </p>
                 </address>
               </div>
               <div class="ms-footbar-block">
@@ -720,10 +697,7 @@
                 <div class="ms-footbar-social">
                   <a href="javascript:void(0)" class="btn-circle btn-facebook"><i class="zmdi zmdi-facebook"></i></a>
                   <a href="javascript:void(0)" class="btn-circle btn-twitter"><i class="zmdi zmdi-twitter"></i></a>
-                  <a href="javascript:void(0)" class="btn-circle btn-youtube"><i class="zmdi zmdi-youtube-play"></i></a><br>
                   <a href="javascript:void(0)" class="btn-circle btn-google"><i class="zmdi zmdi-google"></i></a>
-                  <a href="javascript:void(0)" class="btn-circle btn-instagram"><i class="zmdi zmdi-instagram"></i></a>
-                  <a href="javascript:void(0)" class="btn-circle btn-github"><i class="zmdi zmdi-github"></i></a>
                 </div>
               </div>
             </div>
@@ -841,9 +815,6 @@
               <div class="ripple-container"></div>
             </a>
             <a href="javascript:void(0)" class="btn-circle btn-circle-raised btn-google"><i class="zmdi zmdi-google"></i>
-              <div class="ripple-container"></div>
-            </a>
-            <a href="javascript:void(0)" class="btn-circle btn-circle-raised btn-instagram"><i class="zmdi zmdi-instagram"></i>
               <div class="ripple-container"></div>
             </a>
           </div>
