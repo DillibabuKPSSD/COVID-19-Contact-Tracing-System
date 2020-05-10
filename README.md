@@ -1,5 +1,5 @@
 # COVID-19-Contact-Tracing-System
-The most difficult part in today’s  situation is to trace people who  might have been in contact with a  covid 19 positive patient at any  given point in time.
+The most difficult part of today’s  situation is to trace people who  might have been in contact with a COVID-19 positive patient at any  given point in time.
 
 We have developed a  comprehensive contact tracing  system that will help authorities to easily track the affected  individual’s journey and those  people who were near him / her  during the same time.
 
@@ -27,9 +27,9 @@ Once we have everyone install this  application, the authorities will be able to
 6) Let's check in the web application with Infected User, Contact Distance & Datetime inputs. It will be identified & traced that infected user's contacts in the map & table.
 
 
-https://www.youtube.com/watch?v=
+https://www.youtube.com/watch?v=85vc79mtIXE
 
-[![IMAGE ALT TEXT](http://img.youtube.com/vi/ouVc6szvl00/0ssa.jpg)](http://www.youtube.com/watch?v= "COVID-19 Contact Tracing System")
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/ouVc6szvl00/0ssa.jpg)](http://www.youtube.com/watch?v=85vc79mtIXE "COVID-19 Contact Tracing System")
 
 # Features
 * **Contact Tracing - Web & Android** Status: Completed
